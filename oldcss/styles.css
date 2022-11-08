@@ -77,7 +77,7 @@ img {
 
 /* header */
 
-.header-section {
+.header {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -95,17 +95,17 @@ img {
   text-decoration: none;
 }
 
-.header-logo {
+.header__logo {
   margin-right: 93px;
 }
 
-.logo-dark {
+.logo__dark {
   color: var(--logo-dark-color);
 }
 
 /* site naw */
 
-.site-naw .naw-link {
+.header__menu .header__link {
   color: var(--main-title-color);
   font-weight: 500;
   font-size: 14px;
@@ -116,16 +116,16 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.site-naw .naw-link:hover,
-.site-naw .naw-link:focus {
+.header__menu .header__link:hover,
+.header__menu .header__link:focus {
   color: var(--color-brand);
 }
 
-.site-naw .link.current-page {
+.header__menu .link.current-page {
   color: var(--color-brand);
 }
 
-.contacts .cnt-link {
+.contacts .contacts__link {
   display: flex;
   color: var(--color-primary);
   font-weight: 500;
@@ -139,32 +139,32 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contacts-icon {
+.contacts__icon {
   fill: currentColor;
 }
 
-.contacts .cnt-link:hover,
-.contacts .cnt-link:focus {
+.contacts .contacts__link:hover,
+.contacts .contacts__link:focus {
   color: var(--color-brand);
 }
 
-.contacts .cnt-link:hover .contacts-icon .contacts .cnt-link:focus .contacts-icon {
+.contacts .contacts__link:hover .contacts-icon .contacts .cnt-link:focus .contacts-icon {
   fill: var(--color-brand);
 }
 
-.header-container {
+.header__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.header-naw {
+.header__naw {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.site-naw {
+.header__menu {
   display: flex;
   gap: 50px;
   padding: 0;
@@ -187,7 +187,7 @@ img {
   background-position: center;
 }
 
-.hero-title {
+.hero__title {
   color: var(--main-white-color);
   font-weight: 900;
   font-size: 44px;
@@ -237,7 +237,13 @@ img {
 }
 
 /* benefits */
-.benefits-title {
+.benefits {
+  display: flex;
+  gap: 30px;
+  padding: 0;
+}
+
+.benefits__title {
   color: var(--main-title-color);
   font-size: 14px;
   line-height: 1.14;
@@ -246,20 +252,14 @@ img {
   margin-bottom: 10px;
 }
 
-.benefits {
-  display: flex;
-  gap: 30px;
-  padding: 0;
-}
-
-.benefits-item {
+.benefits__item {
   width: 270px;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
 }
 
-.benefits-icons {
+.benefits__icons {
   display: flex;
   width: 270px;
   height: 120px;
@@ -271,7 +271,10 @@ img {
 }
 
 /* example */
-.example-title {
+.example-section {
+  padding-top: 0;
+}
+.example__title {
   color: var(--main-title-color);
   font-size: 36px;
   line-height: 1.16;
@@ -280,24 +283,20 @@ img {
   text-align: center;
 }
 
-.list-example {
+.example__list {
   display: flex;
   justify-content: space-between;
   gap: 30px;
   padding: 0;
 }
 
-.example-section {
-  padding-top: 0;
-}
-
-.activity {
+.example__activity {
   position: relative;
   display: flex;
   justify-content: center;
 }
 
-.activity::before {
+.example__activity::before {
   content: '';
   position: absolute;
   bottom: 0;
@@ -306,7 +305,7 @@ img {
   background: rgba(47, 48, 58, 0.8);
 }
 
-.activity-text {
+.example__text {
   position: absolute;
   bottom: 0;
   margin: 0;
@@ -321,7 +320,7 @@ img {
 }
 
 /* team section*/
-.section-team {
+.team-section {
   background-color: var(--section-color);
   font-size: 14px;
   line-height: 1.7;
@@ -330,14 +329,14 @@ img {
   margin: 0 auto;
 }
 
-.team-list {
+.team__list {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0;
 }
 
-.team-title {
+.team__title {
   color: var(--main-title-color);
   font-size: 36px;
   line-height: 1.16;
@@ -359,7 +358,7 @@ img {
   margin-right: 0;
 }
 
-.team-subtitle {
+.team-folder__title {
   color: var(--main-title-color);
   font-weight: 500;
   font-size: 16px;
@@ -369,7 +368,7 @@ img {
   margin-bottom: 10px;
 }
 
-.team-details {
+.team-folder__details {
   text-align: center;
   padding: 30px;
 }
@@ -382,7 +381,7 @@ img {
   margin-top: 16px;
 }
 
-.net-link {
+.net-list__link {
   width: 44px;
   height: 44px;
   display: flex;
@@ -391,22 +390,14 @@ img {
   border-radius: 50%;
   color: var(--border-color);
   background-color: var(--main-white-color);
+  fill: currentColor;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.net-icon {
-  fill: currentColor;
-}
-
-.net-link:hover,
-.net-link:focus {
+.net-list__link:hover,
+.net-list__link:focus {
   background-color: var(--color-brand);
-  fill: var(--main-white-color);
-}
-
-.net-link:hover .net-icon,
-.net-link:focus .net-icon {
   fill: var(--main-white-color);
 }
 
