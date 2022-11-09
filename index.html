@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./oldcss/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <title>WebStudio</title>
   </head>
   <body>
@@ -26,7 +26,7 @@
             <a href="#" class="logo header__logo">Web<span class="logo__dark">Studio</span> </a>
             <ul class="header__menu list">
               <li>
-                <a href="./index.html" class="header__link link current-page">Студія</a>
+                <a href="./index.html" class="header__link link header__link--current">Студія</a>
               </li>
               <li>
                 <a href="./portfolio.html" class="header__link link">Портфоліо</a>
@@ -60,7 +60,7 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="hero-button" data-modal-open>Замовити послугу</button>
+          <button type="button" class="hero__button" data-modal-open>Замовити послугу</button>
         </div>
       </section>
       <!-- секція переваги -->
@@ -146,10 +146,10 @@
         <div class="container">
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list list">
-            <li class="team-folder">
+            <li class="team-info">
               <img src="./images/photo1.jpg" alt="фото працівника Ігор Дем'яненко" width="270" />
-              <div class="team-folder__details">
-                <h3 class="team-folder__title">Ігор Дем'яненко</h3>
+              <div class="team-info__details">
+                <h3 class="team-info__title">Ігор Дем'яненко</h3>
                 <p lang="en">Product Designer</p>
                 <ul class="net-list list">
                   <li class="net-list__item">
@@ -203,10 +203,10 @@
                 </ul>
               </div>
             </li>
-            <li class="team-folder">
+            <li class="team-info">
               <img src="./images/photo2.jpg" alt="фото працівника Ольга Рєпіна" width="270" />
-              <div class="team-folder__details">
-                <h3 class="team-folder__title">Ольга Рєпіна</h3>
+              <div class="team-info__details">
+                <h3 class="team-info__title">Ольга Рєпіна</h3>
                 <p lang="en">Frontend Developer</p>
                 <ul class="net-list list">
                   <li class="net-ilist__tem">
@@ -260,10 +260,10 @@
                 </ul>
               </div>
             </li>
-            <li class="team-folder">
+            <li class="team-info">
               <img src="./images/photo3.jpg" alt="фото працівника Микола Тарасов" width="270" />
-              <div class="team-folder__details">
-                <h3 class="team-folder__title">Микола Тарасов</h3>
+              <div class="team-info__details">
+                <h3 class="team-info__title">Микола Тарасов</h3>
                 <p lang="en">Marketing</p>
                 <ul class="net-list list">
                   <li class="net-list__item">
@@ -317,10 +317,10 @@
                 </ul>
               </div>
             </li>
-            <li class="team-folder">
+            <li class="team-info">
               <img src="./images/photo4.jpg" alt="фото працівника Михайло Єрмаков" width="270" />
-              <div class="team-folder__details">
-                <h3 class="team-folder__title">Михайло Єрмаков</h3>
+              <div class="team-info__details">
+                <h3 class="team-info__title">Михайло Єрмаков</h3>
                 <p lang="en">UI Designer</p>
                 <ul class="net-list list">
                   <li class="net-list__item">
@@ -378,48 +378,48 @@
         </div>
       </section>
       <!-- секція клієнти -->
-      <section class="section">
+      <section class="section clients">
         <div class="container">
-          <h2 class="clients-title">Постійні клієнти</h2>
-          <ul class="clients-list list">
-            <li class="clients-item">
-              <a href="" class="clients-link link">
-                <svg class="clients-icon" width="106px" height="60px">
+          <h2 class="clients__title">Постійні клієнти</h2>
+          <ul class="clients__list list">
+            <li class="clients__item">
+              <a href="" class="clients__link link">
+                <svg class="clients__icon" width="106px" height="60px">
                   <use href="./images/icons.svg#icon-clienta"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients-item">
-              <a href="" class="clients-link link">
-                <svg class="clients-icon" width="106px" height="60px">
+            <li class="clients__item">
+              <a href="" class="clients__link link">
+                <svg class="clients__icon" width="106px" height="60px">
                   <use href="./images/icons.svg#icon-clientb"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients-item">
-              <a href="" class="clients-link link">
-                <svg class="clients-icon" width="106px" height="60px">
+            <li class="clients__item">
+              <a href="" class="clients__link link">
+                <svg class="clients__icon" width="106px" height="60px">
                   <use href="./images/icons.svg#icon-clientc"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients-item">
-              <a href="" class="clients-link link">
-                <svg class="clients-icon" width="106px" height="60px">
+            <li class="clients__item">
+              <a href="" class="clients__link link">
+                <svg class="clients__icon" width="106px" height="60px">
                   <use href="./images/icons.svg#icon-clientd"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients-item">
-              <a href="" class="clients-link link">
-                <svg class="clients-icon" width="106px" height="60px">
+            <li class="clients__item">
+              <a href="" class="clients__link link">
+                <svg class="clients__icon" width="106px" height="60px">
                   <use href="./images/icons.svg#icon-cliente"></use>
                 </svg>
               </a>
             </li>
-            <li class="clients-item">
-              <a href="" class="clients-link link">
-                <svg class="clients-icon" width="106px" height="60px">
+            <li class="clients__item">
+              <a href="" class="clients__link link">
+                <svg class="clients__icon" width="106px" height="60px">
                   <use href="./images/icons.svg#icon-clientf"></use>
                 </svg>
               </a>
@@ -429,15 +429,15 @@
       </section>
     </main>
     <!-- підвал -->
-    <footer class="footer-section">
+    <footer class="footer section">
       <div class="container">
-        <div class="footer-parts">
+        <div class="footer__parts">
           <div>
-            <a href="#" class="logo footer-logo">Web<span class="logo-light">Studio</span> </a>
+            <a href="#" class="logo footer__logo">Web<span class="logo__light">Studio</span> </a>
             <address>
               <div>
                 <ul class="address list">
-                  <li class="address-list">
+                  <li class="addres__list">
                     <a
                       href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
                       class="link"
@@ -446,25 +446,25 @@
                       >м. Київ, пр-т Лесі Українки, 26</a
                     >
                   </li>
-                  <li class="address-list">
-                    <a href="malito:info@devstudio.com" class="address-link link" lang="en">
+                  <li class="address__list">
+                    <a href="malito:info@devstudio.com" class="address__link link" lang="en">
                       info@devstudio.com</a
                     >
                   </li>
-                  <li class="address-list">
-                    <a href="tel:+380961111111" class="address-link link"> 38 096 111 11 11 </a>
+                  <li class="address__list">
+                    <a href="tel:+380961111111" class="address__link link"> 38 096 111 11 11 </a>
                   </li>
                 </ul>
               </div>
             </address>
           </div>
           <div>
-            <p class="net-title">приєднуйтесь</p>
-            <ul class="net-list-footer list">
-              <li class="net-item">
+            <p class="footer__net-title">приєднуйтесь</p>
+            <ul class="footer__net-list list">
+              <li>
                 <a
                   href=""
-                  class="net-link-footer link"
+                  class="footer__net-link link"
                   aria-label="Instagram"
                   rel=" noopener noreferrer nofollow"
                 >
@@ -473,10 +473,10 @@
                   </svg>
                 </a>
               </li>
-              <li class="net-item">
+              <li>
                 <a
                   href=""
-                  class="net-link-footer link"
+                  class="footer__net-link link"
                   aria-label="Twitter"
                   rel=" noopener noreferrer nofollow"
                 >
@@ -485,10 +485,10 @@
                   </svg>
                 </a>
               </li>
-              <li class="net-item">
+              <li>
                 <a
                   href=""
-                  class="net-link-footer link"
+                  class="footer__net-link link"
                   aria-label="Facebook"
                   rel=" noopener noreferrer nofollow"
                 >
@@ -497,10 +497,10 @@
                   </svg>
                 </a>
               </li>
-              <li class="net-item">
+              <li>
                 <a
                   href=""
-                  class="net-link-footer link"
+                  class="footer__net-link link"
                   aria-label="Linkedin"
                   rel=" noopener noreferrer nofollow"
                 >
@@ -512,17 +512,17 @@
             </ul>
           </div>
           <div>
-            <p class="mailing-title">Підпишіться на розсилку</p>
+            <p class="footer__title">Підпишіться на розсилку</p>
 
             <form name="footer-form" class="mailing">
               <input
-                class="footer-input"
+                class="mailing__input"
                 id="user-e-mail"
                 type="text"
                 name="user-e-mail"
                 placeholder="E-mail"
               />
-              <button type="submit" class="footer-button">
+              <button type="submit" class="mailing__button">
                 Підписатися
                 <svg width="24" height="24">
                   <use href="./images/icons.svg#icon-send"></use>
@@ -538,37 +538,37 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <!-- форма -->
-        <div class="modal-active">
-          <p class="form-text">Залиште свої дані, ми вам передзвонимо</p>
+        <div class="modal__active">
+          <p class="modal__text">Залиште свої дані, ми вам передзвонимо</p>
           <p></p>
           <form name="contact-form">
-            <label class="form-label" for="user-name">Ім'я</label>
-            <div class="form-control">
-              <input class="form-input" id="user-name" type="text" name="user-name" />
-              <svg class="form-icon" width="18" height="18">
+            <label class="modal__label" for="user-name">Ім'я</label>
+            <div class="modal__control">
+              <input class="modal__input" id="user-name" type="text" name="user-name" />
+              <svg class="modal__icon" width="18" height="18">
                 <use href="./images/icons.svg#icon-person"></use>
               </svg>
             </div>
 
-            <label class="form-label" for="user-phone">Телефон</label>
-            <div class="form-control">
-              <input class="form-input" id="user-phone" type="tel" name="user-phone" />
-              <svg class="form-icon" width="18" height="18">
+            <label class="modal__label" for="user-phone">Телефон</label>
+            <div class="modal__control">
+              <input class="modal__input" id="user-phone" type="tel" name="user-phone" />
+              <svg class="modal__icon" width="18" height="18">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
             </div>
 
-            <label class="form-label" for="user-mail">Пошта</label>
-            <div class="form-control">
-              <input class="form-input" id="user-mail" type="email" name="user-mail" />
-              <svg class="form-icon" width="18" height="18">
+            <label class="modal__label" for="user-mail">Пошта</label>
+            <div class="modal__control">
+              <input class="modal__input" id="user-mail" type="email" name="user-mail" />
+              <svg class="modal__icon" width="18" height="18">
                 <use href="./images/icons.svg#icon-mail"></use>
               </svg>
             </div>
 
-            <label class="form-label" for="user-comment">Коментар</label>
+            <label class="modal__label" for="user-comment">Коментар</label>
             <textarea
-              class="form-textarea"
+              class="modal__textarea"
               id="user-comment"
               name="user-comment"
               placeholder="Введіть текст"
