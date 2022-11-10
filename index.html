@@ -537,10 +537,8 @@
     <!-- модальне вікно -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <!-- форма -->
         <div class="modal__active">
           <p class="modal__text">Залиште свої дані, ми вам передзвонимо</p>
-          <p></p>
           <form name="contact-form">
             <label class="modal__label" for="user-name">Ім'я</label>
             <div class="modal__control">
@@ -574,10 +572,10 @@
               placeholder="Введіть текст"
             ></textarea>
 
-            <div class="checkbox-control">
-              <label class="checkbox-label" for="terms-checkbox">
+            <div class="checkbox">
+              <label class="checkbox__label" for="terms-checkbox">
                 <input
-                  class="checkbox-input"
+                  class="checkbox__input"
                   id="terms-checkbox"
                   type="checkbox"
                   name="terms-checkbox"
@@ -587,15 +585,14 @@
                 </svg>
                 <span>
                   Погоджуюся з розсилкою та приймаю
-                  <a href="#"><span class="checkbox-link">Умови договору</span></a>
+                  <a href="#"><span class="checkbox__link">Умови договору</span></a>
                 </span>
               </label>
             </div>
-
-            <button type="submit" class="form-button">Відправити</button>
+            <button type="submit" class="modal__button">Відправити</button>
           </form>
         </div>
-        <button type="button" class="close-button" data-modal-close>
+        <button type="button" class="modal__close-button" data-modal-close>
           <svg class="icon" width="11px" height="11px">
             <use href="./images/icons.svg#icon-vector"></use>
           </svg>
