@@ -1,7 +1,7 @@
-.example__section {
+.example {
     padding-top: 0;
-  }
-  .example__title {
+  
+  &__title {
     color: var(--main-title-color);
     font-size: 36px;
     line-height: 1.16;
@@ -9,18 +9,18 @@
     margin-bottom: 50px;
     text-align: center;
   }
-  .example__list {
+  &__list {
     display: flex;
     justify-content: space-between;
     gap: 30px;
     padding: 0;
   }
-  .example__activity {
+  &__activity {
     position: relative;
     display: flex;
     justify-content: center;
   }
-  .example__activity::before {
+  &__activity::before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -28,7 +28,7 @@
     height: 70px;
     background: rgba(47, 48, 58, 0.8);
   }
-  .example__text {
+  &__text {
     position: absolute;
     bottom: 0;
     margin: 0;
@@ -41,3 +41,4 @@
     text-transform: uppercase;
     color: var(--main-white-color);
   }
+}

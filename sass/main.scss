@@ -1,6 +1,6 @@
 @import "./utils/variables";
 @import "./utils/base";
-@import "./utils/vh";
+@import "./utils/utils";
 
 @import "./components/header";
 @import "./components/logo";
@@ -20,3 +20,4 @@
 @import "./components/backdrop";
 @import "./components/modal";
 @import "./components/checkbox";
+@import "./components/container";

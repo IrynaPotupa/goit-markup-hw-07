@@ -5,13 +5,13 @@
     letter-spacing: 0.03em;
     margin: 0 auto;
     padding: 60px 0;
-  }
-  .footer__parts {
+  
+  &__parts {
     display: flex;
     gap: 70px;
     align-items: baseline;
   }
-    .footer__title {
+    &__title {
       font-weight: 700;
       font-size: 14px;
       line-height: 16px;
@@ -21,7 +21,7 @@
       margin-bottom: 20px;
     }
 
-  .footer__net-title {
+  &__net-title {
     color: var(--main-white-color);
     font-size: 14px;
     line-height: 1.14;
@@ -30,13 +30,13 @@
     text-align: start;
     margin-bottom: 20px;
   }
-  .footer__net-list {
+&__net-list {
     display: flex;
     justify-content: flex-start;
     gap: 10px;
     padding: 0;
   }
-  .footer__net-link {
+  &__net-link {
     width: 44px;
     height: 44px;
     display: flex;
@@ -48,9 +48,9 @@
     fill: currentColor;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .footer__net-link:hover,
-  .footer__net-link:focus {
+  &__net-link:hover,
+  &__net-link:focus {
     color: var(--main-white-color);
     background-color: var(--color-brand);
   }
- 
+}

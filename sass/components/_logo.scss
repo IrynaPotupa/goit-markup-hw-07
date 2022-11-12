@@ -6,11 +6,11 @@
     line-height: 1.2;
     letter-spacing: 0.03em;
     text-decoration: none;
-  }
   
-  .logo__dark {
+  &__dark {
     color: var(--logo-dark-color);
   }
-  .logo__light {
+  &__light {
     color: var(--main-white-color);
   }  
+}
