@@ -94,9 +94,9 @@
     transform: translateY(-50%);
     fill: var(--main-title-color);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  &__control:focus-within &__icon {
-    fill: var(--color-brand);
+    .modal__control:focus-within & {
+      fill: var(--color-brand);
+    }
   }
   &__textarea {
     width: 100%;

@@ -1,6 +1,6 @@
 .portfolio-card {
-    flex-basis: calc((100% - 60px) / 3);
-  
+  flex-basis: calc((100% - 60px) / 3);
+
   &__details {
     border: 1px solid #eeeeee;
     border-top: none;
@@ -39,6 +39,11 @@
     transform: translateY(101%);
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    .portfolio-card:hover &,
+    .portfolio-card:focus & {
+      transform: translateY(0);
+      opacity: 1;
+    }
   }
   &__text {
     font-size: 18px;
@@ -47,10 +52,5 @@
     align-content: center;
     color: var(--main-white-color);
     padding: 63px 24px;
-  }
-  &:hover &__overlay,
-  &:focus &__overlay {
-    transform: translateY(0);
-    opacity: 1;
   }
 }
