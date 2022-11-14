@@ -1,6 +1,6 @@
 .portfolio {
   &__filters {
-    @include flex();
+    @include flex-center();
     margin-bottom: 34px;
     padding: 0;
   }
@@ -20,7 +20,7 @@
   &__card {
     padding: 0;
     flex-basis: calc((100% - 60px) / 3);
-    @include flex();
+    @include flex-center();
     flex-wrap: wrap;
     gap: 30px;
   }

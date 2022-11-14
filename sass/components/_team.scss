@@ -7,7 +7,7 @@
   margin: 0 auto;
 
   &__list {
-    @include flex();
+    @include flex-center();
     padding: 0;
   }
   &__title {

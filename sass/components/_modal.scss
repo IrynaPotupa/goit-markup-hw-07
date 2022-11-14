@@ -16,7 +16,7 @@
   }
   &__close-button {
     position: absolute;
-    @include flex();
+    @include flex-center();
     width: 30px;
     height: 30px;
     top: 8px;
