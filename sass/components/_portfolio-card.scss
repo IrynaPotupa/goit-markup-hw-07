@@ -1,7 +1,9 @@
 .portfolio-card {
-  flex-basis: calc((100% - 60px) / 3);
-
   &__details {
+    color: var(--color-primary);
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
     border: 1px solid #eeeeee;
     border-top: none;
     padding: 20px 24px;

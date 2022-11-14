@@ -1,6 +1,5 @@
 .net-list {
-  display: flex;
-  justify-content: center;
+  @include flex();
   gap: 10px;
   padding: 0;
   margin-top: 16px;
@@ -8,9 +7,7 @@
   &__link {
     width: 44px;
     height: 44px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex();
     border-radius: 50%;
     color: var(--border-color);
     background-color: var(--main-white-color);

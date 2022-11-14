@@ -88,6 +88,11 @@ ul {
 .address__link:hover, .address__link:focus {
   color: var(--color-brand);
 }
+.address__link--light {
+  color: var(--secondary-white-color);
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .backdrop {
   position: fixed;
@@ -135,17 +140,91 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 270px;
-  height: 120px;
-  background: var(--section-color);
-  border-radius: 4px;
-  margin-bottom: 30px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 270px;
+  height: 120px;
+  background: var(--section-color);
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.button {
+  color: var(--main-white-color);
+  background-color: var(--color-brand);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  display: block;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 0;
+}
+.button--large {
+  padding: 10px 32px;
+  min-width: 216px;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button--large:hover, .button--large:focus {
+  background-color: var(--button-h-f-color);
+}
+.button--svg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+  min-width: 200px;
+  height: 50px;
+  padding: 0;
+  fill: var(--main-white-color);
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button--smaller {
+  padding: 10px 52px;
+  min-width: 200px;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button--smaller:hover, .button--smaller:focus {
+  background-color: var(--button-h-f-color);
+}
+.button--radio {
+  color: var(--main-title-color);
+  background-color: var(--section-color);
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  padding: 6px 22px;
+  -webkit-transition-property: color, background-color, -webkit-box-shadow;
+  transition-property: color, background-color, -webkit-box-shadow;
+  transition-property: color, background-color, box-shadow;
+  transition-property: color, background-color, box-shadow, -webkit-box-shadow;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button--radio:hover, .button--radio:focus {
+  color: var(--main-white-color);
+  background-color: var(--color-brand);
+  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .checkbox {
@@ -309,6 +388,9 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -418,9 +500,9 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .header__logo {
   margin-right: 93px;
@@ -471,9 +553,9 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .hero {
@@ -496,27 +578,7 @@ ul {
   margin: 0 auto 30px auto;
 }
 .hero__button {
-  color: var(--main-white-color);
-  background-color: var(--color-brand);
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-  cursor: pointer;
-  display: block;
-  min-width: 216px;
-  padding: 10px 32px;
   margin: 0 auto;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border: 0;
-  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.hero__button:hover, .hero__button:focus {
-  background-color: var(--button-h-f-color);
 }
 
 .logo {
@@ -528,10 +590,10 @@ ul {
   letter-spacing: 0.03em;
   text-decoration: none;
 }
-.logo__dark {
+.logo--dark {
   color: var(--logo-dark-color);
 }
-.logo__light {
+.logo--light {
   color: var(--main-white-color);
 }
 
@@ -559,35 +621,7 @@ ul {
   border-color: var(--color-brand);
 }
 .mailing__button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 10px;
-  color: var(--main-white-color);
-  background-color: var(--color-brand);
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-  cursor: pointer;
-  min-width: 200px;
-  height: 50px;
   margin: 0 auto;
-  padding: 0;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border: 0;
-  fill: var(--main-white-color);
-  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
@@ -605,39 +639,19 @@ ul {
   border-radius: 4px;
 }
 .modal__button {
-  color: var(--main-white-color);
-  background-color: var(--color-brand);
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-  cursor: pointer;
-  display: block;
-  min-width: 200px;
-  padding: 10px 52px;
   margin: 0 auto;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border: 0;
-  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.modal__button:hover, .modal__button:focus {
-  background-color: var(--button-h-f-color);
 }
 .modal__close-button {
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 30px;
   height: 30px;
   top: 8px;
@@ -721,6 +735,9 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -752,11 +769,11 @@ ul {
   fill: var(--main-white-color);
 }
 
-.portfolio-card {
-  -ms-flex-preferred-size: calc((100% - 60px) / 3);
-      flex-basis: calc((100% - 60px) / 3);
-}
 .portfolio-card__details {
+  color: var(--color-primary);
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
   border: 1px solid #eeeeee;
   border-top: none;
   padding: 20px 24px;
@@ -816,12 +833,12 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 34px;
   padding: 0;
 }
@@ -832,56 +849,28 @@ ul {
   margin-right: 0;
 }
 .portfolio__button {
-  color: var(--main-title-color);
-  background-color: var(--section-color);
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.6;
-  letter-spacing: 0.03em;
-  cursor: pointer;
-  display: block;
-  padding: 6px 22px;
   margin: 0 auto;
-  border-radius: 4px;
-  border: 0;
-  -webkit-transition-property: color, background-color, -webkit-box-shadow;
-  transition-property: color, background-color, -webkit-box-shadow;
-  transition-property: color, background-color, box-shadow;
-  transition-property: color, background-color, box-shadow, -webkit-box-shadow;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.portfolio__button:hover, .portfolio__button:focus {
-  color: var(--main-white-color);
-  background-color: var(--color-brand);
-  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .portfolio__button--current {
   color: var(--main-white-color);
   background-color: var(--color-brand);
 }
 .portfolio__card {
-  color: var(--color-primary);
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.03em;
-}
-.portfolio__card {
+  padding: 0;
+  -ms-flex-preferred-size: calc((100% - 60px) / 3);
+      flex-basis: calc((100% - 60px) / 3);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 30px;
-  padding: 0;
-  margin: 0;
 }
 
 .team-info {
@@ -921,12 +910,12 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 0;
 }
 .team__title {

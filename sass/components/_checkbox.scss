@@ -1,8 +1,6 @@
 .checkbox {
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex-center();
   margin-top: 20px;
   margin-bottom: 40px;
 

@@ -23,7 +23,9 @@
       <div class="container">
         <div class="header__container">
           <nav class="header__naw">
-            <a href="#" class="logo header__logo">Web<span class="logo__dark">Studio</span> </a>
+            <a href="#" class="logo header__logo"
+              >Web<span class="logo logo--dark">Studio</span>
+            </a>
             <ul class="header__menu list">
               <li>
                 <a href="./index.html" class="header__link link header__link--current">Студія</a>
@@ -60,7 +62,9 @@
       <section class="hero section">
         <div class="container">
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="hero__button" data-modal-open>Замовити послугу</button>
+          <button type="button" class="button button--large hero__button" data-modal-open>
+            Замовити послугу
+          </button>
         </div>
       </section>
       <!-- секція переваги -->
@@ -433,7 +437,7 @@
       <div class="container">
         <div class="footer__parts">
           <div>
-            <a href="#" class="logo footer__logo">Web<span class="logo__light">Studio</span> </a>
+            <a href="#" class="logo">Web<span class="logo logo--light">Studio</span> </a>
             <address>
               <div>
                 <ul class="address list">
@@ -447,12 +451,18 @@
                     >
                   </li>
                   <li class="address__list">
-                    <a href="malito:info@devstudio.com" class="address__link link" lang="en">
+                    <a
+                      href="malito:info@devstudio.com"
+                      class="address__link address__link--light link"
+                      lang="en"
+                    >
                       info@devstudio.com</a
                     >
                   </li>
                   <li class="address__list">
-                    <a href="tel:+380961111111" class="address__link link"> 38 096 111 11 11 </a>
+                    <a href="tel:+380961111111" class="address__link address__link--light link">
+                      38 096 111 11 11
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -522,7 +532,7 @@
                 name="user-e-mail"
                 placeholder="E-mail"
               />
-              <button type="submit" class="mailing__button">
+              <button type="submit" class="button button--svg mailing__button">
                 Підписатися
                 <svg width="24" height="24">
                   <use href="./images/icons.svg#icon-send"></use>
@@ -589,7 +599,7 @@
                 </span>
               </label>
             </div>
-            <button type="submit" class="modal__button">Відправити</button>
+            <button type="submit" class="button button--smaller modal__button">Відправити</button>
           </form>
         </div>
         <button type="button" class="modal__close-button" data-modal-close>
