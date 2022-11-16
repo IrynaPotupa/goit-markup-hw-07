@@ -16,39 +16,39 @@
     gap: 50px;
     padding: 0;
   }
-  &__menu &__link {
-    color: var(--main-title-color);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    padding: 32px 0;
-    display: block;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover,
-    &:focus {
-      color: var(--color-brand);
-    }
-  }
-  &__link--current {
-    position: relative;
-    color: var(--color-brand);
-    &::after {
-      content: '';
-      position: absolute;
-      display: block;
-      left: 0;
-      bottom: -1px;
-      width: 100%;
-      height: 4px;
-      border-radius: 2px;
-      background-color: var(--color-brand);
-    }
-  }
-  &__menu &__link--current {
-    color: var(--color-brand);
-  }
   &__naw {
     @include flex-center();
   }
+}
+.header__menu .header__link {
+  color: var(--main-title-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  padding: 32px 0;
+  display: block;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--color-brand);
+  }
+}
+.header__link--current {
+  position: relative;
+  color: var(--color-brand);
+  &::after {
+    content: '';
+    position: absolute;
+    display: block;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--color-brand);
+  }
+}
+.header__menu .header__link--current {
+  color: var(--color-brand);
 }
